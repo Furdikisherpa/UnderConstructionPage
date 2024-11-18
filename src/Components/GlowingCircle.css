@@ -1,0 +1,145 @@
+body {
+  margin-top: 80px;
+  background-color: #130909; /* Optional for aesthetics */
+}
+
+.inner {
+  width: 490px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 0 -50px 20px 10px #ea4c89, 
+              -5px -10px rgba(234, 76, 137, 0.5); /* Original glowing shadow */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -170px;
+  margin-top: 70px;
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+}
+
+/* Adding white shine effect in the top-left corner using a pseudo-element */
+.inner::before {
+  content: "";
+  position: absolute;
+  top: 10px; /* Adjust for position of shine */
+  left: 10px; /* Adjust for position of shine */
+  width: 120px; /* Width of the shine */
+  height: 120px; /* Height of the shine */
+  border-radius: 50%; /* To make it a circular shine */
+  background: rgba(255, 255, 255, 0.8); /* White shine */
+  box-shadow: 0px 0px 70px 60px rgba(242, 160, 201, 0.4);
+  z-index: 1;
+}
+
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 480px) {
+  .inner {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 -20px 10px 5px #ea4c89, 
+                -3px -5px rgba(234, 76, 137, 0.5);
+    margin-bottom: -60px;
+  }
+
+  .inner::before {
+    top: 50px;
+    left: 180px;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 50px 30px rgba(242, 160, 201, 0.4);
+  }
+}
+
+/* Portrait e-readers, smaller tablets @ 600 or @ 640 wide */
+@media (min-width: 481px) and (max-width: 640px) {
+  .inner {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 -30px 15px 7px #ea4c89, 
+                -4px -8px rgba(234, 76, 137, 0.5);
+    margin-bottom: -100px;
+  }
+
+  .inner::before {
+    top: 70px;
+    left: 250px;
+    width: 0px;
+    height: 1px;
+    box-shadow: 0px 0px 70px 60px rgba(242, 160, 201, 0.4);
+  }
+}
+
+/* Portrait tablets, portrait iPad, landscape e-readers */
+@media (min-width: 641px) and (max-width: 960px) {
+  .inner {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 -40px 18px 9px #ea4c89, 
+                -4px -8px rgba(234, 76, 137, 0.5);
+    margin-bottom: -120px;
+  }
+
+  .inner::before {
+    top: 70px;
+    left: 350px;
+    width: 0px;
+    height: 5px;
+    box-shadow: 0px 0px 70px 60px rgba(242, 160, 201, 0.4);
+  }
+}
+
+/* Tablets, landscape iPad, lo-res laptops and desktops */
+@media (min-width: 961px) and (max-width: 1024px) {
+  .inner {
+    width: 450px;
+    height: 460px;
+    box-shadow: 0 -45px 20px 10px #ea4c89, 
+                -5px -10px rgba(234, 76, 137, 0.5);
+    margin-bottom: -150px;
+  }
+
+  .inner::before {
+    top: 70px;
+    left: 400px;
+    width: 0px;
+    height: 10px;
+    box-shadow: 0px 0px 70px 60px rgba(242, 160, 201, 0.4);
+  }
+}
+
+/* Big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .inner {
+    width: 470px;
+    height: 480px;
+    box-shadow: 0 -48px 20px 10px #ea4c89, 
+                -5px -10px rgba(234, 76, 137, 0.5);
+    margin-bottom: -160px;
+  }
+
+  .inner::before {
+    top: 70px;
+    left: 400px;
+    width: 0px;
+    height: 10px;
+    box-shadow: 0px 0px 70px 60px rgba(242, 160, 201, 0.4);
+  }
+}
+
+/* Hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .inner {
+    width: 490px;
+    height: 500px;
+    box-shadow: 0 -50px 20px 10px #e80e7b, 
+                -5px -10px rgba(234, 76, 137, 0.5);
+    margin-bottom: -170px;
+  }
+
+  .inner::before {
+    top: 70px;
+    left: 410px;
+    width: 0px;
+    height: 10px;
+    box-shadow: 0px 0px 70px 70px rgba(242, 160, 201, 0.4);
+  }
+}

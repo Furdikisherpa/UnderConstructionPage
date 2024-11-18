@@ -1,0 +1,130 @@
+/* Existing CSS */
+.phone-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  padding-left: 500px; /* Adjust for larger screens */
+}
+
+.phone-icon-icon {
+  margin-right: 8px;
+  animation: ringing 0.5s infinite; /* Add ringing animation */
+}
+
+/* Ringing animation */
+@keyframes ringing {
+  0% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.phone-number {
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { 
+  .phone-icon {
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 0; /* Reset padding for smaller screens */
+  }
+
+  .phone-number {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) { 
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .phone-icon {
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0; /* Reset padding */
+  }
+
+  .phone-number {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) { 
+  /* portrait e-readers, smaller tablets */
+  .phone-icon {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0; /* Reset padding */
+  }
+
+  .phone-number {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) { 
+  /* portrait tablets, landscape e-readers */
+  .phone-icon {
+
+    font-size: 16px;
+    padding-left: 0; /* Reset padding */
+  }
+
+  .phone-number {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1024px) { 
+  /* tablets, landscape iPad, lo-res laptops and desktops */
+  .phone-icon {
+    font-size: 18px;
+    padding-left: 450px; /* Adjust for medium-sized screens */
+  }
+
+  .phone-number {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) { 
+  /* big landscape tablets, laptops, desktops */
+  .phone-icon {
+    font-size: 20px;
+    padding-left: 450px; /* Adjust for larger devices */
+  }
+
+  .phone-number {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1281px) { 
+  /* hi-res laptops and desktops */
+  .phone-icon {
+    font-size: 22px;
+    padding-left: 500px; /* Same as previous large screen setup */
+  }
+
+  .phone-number {
+    font-size: 20px;
+  }
+}

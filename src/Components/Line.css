@@ -1,0 +1,69 @@
+.line {
+  height: 20px;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #A71111 50%, #FBFBFD 60%);
+  margin-top: -10px;
+}
+
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 480px) {
+  .line {
+    width: 200px;
+    height: 10px;
+    background-image: linear-gradient(to right, #A71111 45%, #FBFBFD 55%);
+    margin-top: -10px;
+  }
+}
+
+/* Portrait e-readers, smaller tablets @ 600 or @ 640 wide */
+@media (min-width: 481px) and (max-width: 640px) {
+  .line {
+    width: 300px;
+    height: 15px;
+    background-image: linear-gradient(to right, #A71111 47%, #FBFBFD 57%);
+    margin-top: -3px;
+  }
+}
+
+/* Portrait tablets, portrait iPad, landscape e-readers */
+@media (min-width: 641px) and (max-width: 960px) {
+  .line {
+    width: 400px;
+    height: 18px;
+    background-image: linear-gradient(to right, #A71111 48%, #FBFBFD 58%);
+    margin-top: -6px;
+  }
+}
+
+/* Tablets, landscape iPad, lo-res laptops and desktops */
+@media (min-width: 961px) and (max-width: 1024px) {
+  .line {
+    width: 500px;
+    height: 20px;
+    background-image: linear-gradient(to right, #A71111 49%, #FBFBFD 59%);
+    margin-top: -8px;
+  }
+}
+
+/* Big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .line {
+    width: 520px;
+    height: 20px;
+    background-image: linear-gradient(to right, #A71111 50%, #FBFBFD 60%);
+    margin-top: -10px;
+  }
+}
+
+/* Hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .line {
+    width: 550px;
+    height: 20px;
+    background-image: linear-gradient(to right, #A71111 50%, #FBFBFD 60%);
+    margin-top: -10px;
+  }
+}

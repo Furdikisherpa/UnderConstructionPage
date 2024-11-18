@@ -1,0 +1,84 @@
+.animated-text {
+  color: white;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Wavy animation for individual letters */
+.animated-text span {
+  display: inline-block;
+  animation: wave-text 3.5s infinite;
+}
+
+@keyframes wave-text {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Smartphones, iPhone, portrait 480x320 phones */
+@media (max-width: 480px) {
+  .animated-text {
+    font-size: 10px; /* Smaller font size for smaller screens */
+    margin-top: 30px;
+  }
+
+  .animated-text span {
+    animation-duration: 2.5s; /* Shorter animation duration */
+  }
+}
+
+/* Portrait e-readers, smaller tablets @ 600 or @ 640 wide */
+@media (min-width: 481px) and (max-width: 640px) {
+  .animated-text {
+    font-size: 14px; /* Adjust font size slightly bigger */
+    margin-top: 40px;
+  }
+
+  .animated-text span {
+    animation-duration: 3s; /* Adjust animation duration */
+  }
+}
+
+/* Portrait tablets, portrait iPad, landscape e-readers */
+@media (min-width: 641px) and (max-width: 960px) {
+  .animated-text {
+    font-size: 18px; /* Slightly larger font size */
+    margin-top: 45px;
+  }
+
+  .animated-text span {
+    animation-duration: 3.5s; /* Default animation duration */
+  }
+}
+
+/* Tablets, landscape iPad, lo-res laptops and desktops */
+@media (min-width: 961px) and (max-width: 1024px) {
+  .animated-text {
+    font-size: 22px; /* Increase font size */
+    margin-top: 50px;
+  }
+}
+
+/* Big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .animated-text {
+    font-size: 26px; /* Larger font size for large tablets and laptops */
+    margin-top: 60px;
+  }
+}
+
+/* Hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .animated-text {
+    font-size: 30px; /* Largest font size for high-res screens */
+    margin-top: 70px;
+  }
+}
